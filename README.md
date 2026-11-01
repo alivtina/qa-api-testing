@@ -1,4 +1,5 @@
 # QA API Testing Project
+[![API Tests](https://github.com/alivtina/qa-api-testing/actions/workflows/tests.yml/badge.svg)](https://github.com/alivtina/qa-api-testing/actions/workflows/tests.yml)
 
 A beginner-friendly API testing project using Python, pytest,
 and the requests library.
@@ -33,19 +34,29 @@ persist newly created resources.
 
 Create and activate a virtual environment:
 
-    python -m venv .venv
-    source .venv/bin/activate
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
 
 Install dependencies:
 
-    pip install -r requirements.txt
+```bash
+pip install -r requirements.txt
+```
 
 ## Running Tests
 
 Run all tests:
 
-    pytest -v
+```bash
+pytest -v
+```
 
-## Current Results
+## Test Execution
 
-12 automated API tests passing.
+The project contains 12 automated API tests.
+
+Tests can be executed locally using `pytest -v`.
+
+GitHub Actions automatically runs the test suite on every push and pull request.
